@@ -21,12 +21,12 @@
             speed = vehicle.GetSpeed();
             SpeedHistory.Add(speed);
         }
-        
+
         public string GetLastReading()
         {
             if (speed > legalSpeed)
             {
-                return WriteMessage("Catched above legal speed.");
+                return WriteMessage("Caught above legal speed.");
             }
             else
             {
@@ -37,6 +37,11 @@
         public virtual string WriteMessage(string radarReading)
         {
             return $"Vehicle with plate {plate} at {speed.ToString()} km/h. {radarReading}";
+        }
+
+        public float GetLegalSpeed()
+        {
+            return legalSpeed;
         }
     }
 }
