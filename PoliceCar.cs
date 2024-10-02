@@ -1,6 +1,6 @@
 ﻿namespace Practice1
 {
-    class PoliceCar : Vehicle
+    class PoliceCar : VehicleWithPlate
     {
         //constant string as TypeOfVehicle wont change allong PoliceCar instances
         private const string typeOfVehicle = "Police Car";
@@ -10,7 +10,7 @@
         private SpeedRadar? speedRadar;
         private PoliceStation station;
 
-        public PoliceCar(string plate, bool withRadar, PoliceStation station) : base(typeOfVehicle, plate)
+        public PoliceCar(string plate, bool withRadar, PoliceStation station) : base(plate, typeOfVehicle)
         {
             isPatrolling = false;
             isChasing = false;
@@ -25,7 +25,7 @@
             }
         }
 
-        public void UseRadar(Vehicle vehicle)
+        public void UseRadar(VehicleWithPlate vehicle)
         {
             if (speedRadar != null)
             {

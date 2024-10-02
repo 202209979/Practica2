@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Practice1
+﻿namespace Practice1
 {
-    internal class VehicleWithPlate
+    abstract class VehicleWithPlate : Vehicle
     {
+        private string plate;
+
+        public VehicleWithPlate(string plate, string typeOfVehicle): base(typeOfVehicle)
+        {
+            this.plate = plate;
+        }
+
+        public string GetPlate()
+        {
+            return plate;
+        }
+
+        //Override ToString() method with class information
+        public override string ToString()
+        {
+            return $"{GetTypeOfVehicle()} with plate {GetPlate()}";
+        }
+
     }
 }
