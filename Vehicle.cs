@@ -1,6 +1,6 @@
 ﻿namespace Practice1
 {
-    abstract class Vehicle : IMessageWritter
+    abstract class Vehicle
     {
         private string typeOfVehicle;
         private float speed;
@@ -24,12 +24,6 @@
         public void SetSpeed(float speed)
         {
             this.speed = speed;
-        }
-
-        //Implment interface with Vechicle message structure
-        public string WriteMessage(string message)
-        {
-            return $"{this}: {message}";
         }
     }
 }

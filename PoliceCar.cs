@@ -36,11 +36,10 @@
                     Console.WriteLine(WriteMessage($"Triggered radar. Result: {meassurement}"));
                     if (vehicle.GetSpeed() > speedRadar.GetLegalSpeed())
                     {
-                        station.ActivateAlert(vehicle.GetPlate());
                         isChasing = true;
-                        Console.WriteLine($"Police Car with plate {GetPlate()} chasing infractor car with plate {vehicle.GetPlate()}.");
+                        Console.WriteLine(WriteMessage($"chasing infractor car with plate {vehicle.GetPlate()}."));
+                        ReportInfractor(vehicle.GetPlate());
                     }
-
                 }
                 else
                 {
@@ -104,6 +103,24 @@
             {
                 Console.WriteLine(WriteMessage("has no radar available."));
             }
+        }
+
+        public void ReportInfractor(string infractorPlate)
+        {
+            Console.WriteLine(WriteMessage($"Reporting infractor with plate {infractorPlate} to police station."));
+            station.ActivateAlert(infractorPlate);
+        }
+
+        //Override ToString() method with class information
+        public override string ToString()
+        {
+            if (!withRadar)
+            {
+                return $"{GetTypeOfVehicle()} with plate {GetPlate()}";
+            }
+
+            return $"{GetTypeOfVehicle()} with plate {GetPlate()} and radar";
+
         }
 
     }

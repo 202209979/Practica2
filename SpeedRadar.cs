@@ -34,14 +34,14 @@
             }
         }
 
-        public virtual string WriteMessage(string radarReading)
-        {
-            return $"Vehicle with plate {plate} at {speed.ToString()} km/h. {radarReading}";
-        }
-
         public float GetLegalSpeed()
         {
             return legalSpeed;
+        }
+
+        public virtual string WriteMessage(string radarReading)
+        {
+            return $"Vehicle with plate {plate} at {speed.ToString()} km/h. {radarReading}";
         }
     }
 }

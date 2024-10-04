@@ -19,3 +19,11 @@ C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de progr
 C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\obj\Debug\net8.0\Practice1.dll
 C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\obj\Debug\net8.0\refint\Practice1.dll
 C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\obj\Debug\net8.0\Practice1.pdb
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\bin\Debug\net8.0\Practice1.exe
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\bin\Debug\net8.0\Practice1.deps.json
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\bin\Debug\net8.0\Practice1.runtimeconfig.json
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\bin\Debug\net8.0\Practice1.dll
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\bin\Debug\net8.0\Practice1.pdb
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\obj\Debug\net8.0\Practice1.sourcelink.json
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\obj\Debug\net8.0\Practice1.genruntimeconfig.cache
+C:\Users\Alvaro FG\OneDrive\Escritorio\3ºA IMAT\Paradigmas y técnicas de programación\Prácticas\P2\obj\Debug\net8.0\ref\Practice1.dll

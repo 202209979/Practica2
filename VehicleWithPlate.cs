@@ -1,6 +1,6 @@
 ﻿namespace Practice1
 {
-    abstract class VehicleWithPlate : Vehicle
+    abstract class VehicleWithPlate : Vehicle, IMessageWritter
     {
         private string plate;
 
@@ -18,6 +18,13 @@
         public override string ToString()
         {
             return $"{GetTypeOfVehicle()} with plate {GetPlate()}";
+        }
+
+
+        //Implment interface with Vechicle message structure
+        public string WriteMessage(string message)
+        {
+            return $"{this}: {message}";
         }
 
     }
